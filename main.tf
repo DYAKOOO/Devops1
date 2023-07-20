@@ -41,5 +41,5 @@ resource "google_compute_instance" "vm_instance" {
 
 resource "google_compute_address" "vm_public_ip" {
   count = length(local.instance_names)
-  name  = "my-public-ip-${local.instance_names[count.index]}"
+  name  = "my-public-ip-${local.instance_names[count.index]}" #dfdf
 }
